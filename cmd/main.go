@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 type Node struct {
 	Val  int
 	Next *Node
@@ -48,6 +50,6 @@ func main() {
 	}
 
 	for linkedList.Head != nil {
-		println(linkedList.Pop())
+		fmt.Println(linkedList.Pop())
 	}
 }
